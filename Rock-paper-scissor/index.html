@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper Scissors</title>
+</head>
+<body>
+    <p>ROCK PAPER SCISSORS</p>
+    <button onclick="
+        pickComputerMove();
+        userMove='rock';
+        checkResult(userMove,computerMove);        
+        ">rock</button>
+    <button onclick="
+        pickComputerMove();
+        userMove='paper';
+        checkResult(userMove,computerMove);      
+        ">paper</button>
+    <button onclick="
+        pickComputerMove();
+        userMove='scissors';
+        checkResult(userMove,computerMove);      
+        ">scissors</button>
+<script>
+    let computerMove='';
+    let userMove='';
+    let randNum=0;
+
+    function checkResult(userMove,computerMove){
+        if(userMove===computerMove){
+            alert(`Tie. You choose ${userMove} and computer choose ${computerMove}`);
+        }else if(userMove==='rock'&& computerMove==='paper'){
+            alert(`You win. You choose' ${userMove}' and computer choose '${computerMove}`);
+        }else if(userMove==='rock'&& computerMove==='scissors'){
+            alert(`You win. You choose ${userMove} and computer choose ${computerMove}`);
+        }else if(userMove==='paper'&& computerMove==='scissors'){
+            alert(`Computer wins. You choose ${userMove} and computer choose ${computerMove}`);
+        }else if(userMove==='paper'&& computerMove==='rock'){
+            alert(`Computer wins. You choose ${userMove} and computer choose ${computerMove}`);
+        }else if(userMove==='scissors'&& computerMove==='paper'){
+            alert(`You win. You choose ${userMove} and computer choose ${computerMove}`);
+        }else if(userMove==='scissors'&& computerMove==='rock'){
+            alert(`Computer wins. You choose ${userMove} and computer choose ${computerMove}`);
+        }
+    }
+    function pickComputerMove(){
+        randNum=Math.random();
+    if(randNum<1/2){
+        computerMove='rock';
+    }else if(randNum>=1/2 && randNum<2/3){
+        computerMove='paper';
+    }else{
+        computerMove='scissors';
+    }
+    }   
+</script>
+</body>
+</html>
+
+
