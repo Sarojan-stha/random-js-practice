@@ -1,0 +1,22 @@
+#submitBtn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(212, 0, 255);
+    color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#submitBtn:hover{
+    background-color: rgb(132, 0, 255) ;
+}
+#submitBtn:active{
+    opacity: 0.4;
+}
+#maxNum,#minNum{
+    padding: 8px 16px;
+    margin: 2px;
+    background-color: antiquewhite;
+    color: black;
+}
