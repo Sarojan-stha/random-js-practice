@@ -12,7 +12,7 @@ username = firstLetter + remainingLetter;
 console.log(username); */
 
 //using method chaining
-username = username.trim().charAt(0).toUpperCase() + username.slice(1).toLowerCase();
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 console.log(username);
 console.log(`hello`);
 
