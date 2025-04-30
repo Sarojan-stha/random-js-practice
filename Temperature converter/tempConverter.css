@@ -36,6 +36,7 @@ label{
     height: 40px;
     width: auto;
     background-color: rgb(207, 0, 0);
+    color: white;
     border: none;
     padding: 10px 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,4 +52,9 @@ label{
 }
 #submitBtn:active{
     opacity: 0.4;
+}
+
+#result{
+    font-size: 1.25em;
+    font-weight: bold;
 }
