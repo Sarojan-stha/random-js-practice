@@ -1,7 +1,12 @@
 #containeer{
     text-align: center;
     border: none;
-    width: auto;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px grey;
 }
 #numOfDice{
     font-family: sans-serif;
@@ -19,7 +24,7 @@
     font-size: 1.25em;
     font-weight: bold;
     padding: 5px 10px;
-    background-color: rgba(0, 174, 255, 0.911);
+    background-color: rgba(1, 126, 43, 0.911);
     color: white;
     border-radius: 9px;
 }
@@ -30,12 +35,12 @@
     font-weight: bold;
 }
 #diceImage{
-    width: 200px;
+    width: 280px;
     margin: auto;
     margin-top: 10px;
 }
 #potChakka{
-    width: 60px;
+    width: 80px;
     height: auto;
     //margin: 5px;
 }
