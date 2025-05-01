@@ -9,11 +9,11 @@
 <body>
     <div id="containeer">
         <h1>DICE ROLLER</h1>
-        <label for="numOfDice"># of Dice</label>
+        <label id="labelForDice"># of Dice: </label>
         <input type="number" id="numOfDice" value="1" min="1">
         <button id="rollDice" onclick="diceRoller()" >Roll Dice</button>
-        <div id="result"></div>
-        <div id="diceImage"></div>
+        <div id="result">Result</div>
+        <div id="diceImage">Images</div>
     </div>
     <script src="dice.js"></script>
     
