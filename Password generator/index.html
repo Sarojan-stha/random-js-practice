@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random password Generator</title>
+    <link rel="stylesheet" href="pwGenerator.css">
 
 </head>
 <body>
+    <div id="containeer">
     <h1>RANDOM PASSWORD GENERATOR</h1>
     <input type="number" id="pwLength" placeholder="Enter length of password" value="0"><br>
 
+    <div id="buttons">
     <input type="radio" class="radioChar" id="includeUpperCase" name="pwCharacters">
     <label for="includeUpperCase">Upper Case</label><br>
 
@@ -24,7 +27,9 @@
 
     <button id="generatePw" onclick="generatePassword() ">Generate Password</button>
 
-    <p id="showPw" >Generatedpassword</p>
+</div>
+    <p id="showPw" >Generated password</p>
+</div>
 
     <script src="pwGenerator.js"></script>
 </body>
