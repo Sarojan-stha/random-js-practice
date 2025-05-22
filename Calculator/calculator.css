@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#containeer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.753);
+    max-width: fit-content;
+    border-radius: 9px;
+    overflow: hidden;
+    border: none;
+
+
+}
+
+#display{
+    width: 100%;
+    border: none;
+    background-color: hsla(0, 0%, 0%, 0.219);
+    text-align: left;
+    padding: 20px;
+    color: white;
+    font-weight: bold;/*the change in font size changes the width of the containeer*/
+    
+}
+
+#keypad{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    gap: 10px;
+    padding: 15px;
+}
+
+
+button{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.795);
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.25s;
+
+
+}
+
+button:hover{
+    background-color: rgba(44, 1, 1, 0.336);
+}
+button:active{
+    opacity: 0.4;
+}
+
+.symbol-button{
+    background-color: orange;
+    transition: background-color 0.25s;
+}
+
+.symbol-button:hover{
+    background-color: rgb(252, 134, 0);
+}
