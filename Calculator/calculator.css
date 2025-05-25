@@ -4,6 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: lightgray;
 
 }
 
@@ -66,4 +67,8 @@ button:active{
 
 .symbol-button:hover{
     background-color: rgb(252, 134, 0);
+}
+
+#result{
+    width: 110px;
 }
