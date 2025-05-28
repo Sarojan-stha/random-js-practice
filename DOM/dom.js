@@ -31,7 +31,7 @@ element.forEach( element =>{
 
 
 }  ) */
-
+/* 
 const ulElement = document.querySelectorAll("ul");
 
 ulElement.forEach(ulElement =>{
@@ -39,3 +39,10 @@ ulElement.forEach(ulElement =>{
     lastChild.style.backgroundColor = "red";
 
 })
+ */
+
+const element = document.getElementById("vegetables");
+const nextSibling = element.nextElementSibling;
+
+nextSibling.style.backgroundColor = "red";
+
