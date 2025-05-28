@@ -14,3 +14,21 @@
 //document.querySelector()          :FIRST ELEMENT AND NULL
 //document.querySelectorAll()       :NODE LISTS
 
+//DOM navigation              :navigating through the structures in html document using javascript
+// .firstElementChild 
+// .lastElementChild 
+// .nextElementSibling 
+// .previousElementSibling 
+// .parentElement 
+// .children
+
+
+const element = document.querySelectorAll("ul");
+
+element.forEach( element =>{
+    const firstChild = element.firstElementChild;
+    firstChild.style.backgroundColor = "red";
+
+
+}  )
+
