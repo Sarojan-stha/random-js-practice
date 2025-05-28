@@ -41,8 +41,13 @@ ulElement.forEach(ulElement =>{
 })
  */
 
-const element = document.getElementById("vegetables");
+/* const element = document.getElementById("vegetables");
 const nextSibling = element.nextElementSibling;
 
 nextSibling.style.backgroundColor = "red";
 
+ */
+const element = document.getElementById("vegetables");
+const previousSibling = element.previousElementSibling;
+
+previousSibling.style.backgroundColor = "red";
