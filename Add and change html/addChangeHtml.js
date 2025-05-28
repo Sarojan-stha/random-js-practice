@@ -13,6 +13,8 @@ const b12 =  document.createElement("h2");
 const b23 = document.createElement("h2");
 const b34 = document.createElement("h2");
 
+const elementToBeRemoved = document.createElement("p");
+ 
 // 2.ASSIGN VALUE TO THE 
 firstH1.textContent = "First child";
 lastH1.textContent  = "last child";
@@ -38,8 +40,7 @@ b12.style.color = "red";
 b23.style.color = "red";
 b34.style.color = "red";
 
-
-
+elementToBeRemoved.textContent = "Hello I should be removed";
 
 
 // 3.APPPEND TO DOM
@@ -58,4 +59,7 @@ document.body.insertBefore(b23, boxx3);
 
 document.body.insertBefore(b34, document.getElementById("box4"));
 
+document.body.prepend(elementToBeRemoved);
+
 // 4.REMOVE ELEMENT
+document.body.removeChild(elementToBeRemoved);
