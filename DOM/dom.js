@@ -53,7 +53,14 @@ const previousSibling = element.previousElementSibling;
 
 previousSibling.style.backgroundColor = "red"; */
 
-const element = document.getElementById("vegetables");
+/* const element = document.getElementById("vegetables");
 const parentElement = element.parentElement;
 
-parentElement.style.backgroundColor = "red";
+parentElement.style.backgroundColor = "red"; */
+
+const element = document.getElementById("vegetables");
+const child = element.children;
+
+Array.from(child).forEach(element => {
+    element.style.backgroundColor = "grey";
+});
