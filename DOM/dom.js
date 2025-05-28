@@ -22,7 +22,7 @@
 // .parentElement 
 // .children
 
-
+/* 
 const element = document.querySelectorAll("ul");
 
 element.forEach( element =>{
@@ -30,5 +30,12 @@ element.forEach( element =>{
     firstChild.style.backgroundColor = "red";
 
 
-}  )
+}  ) */
 
+const ulElement = document.querySelectorAll("ul");
+
+ulElement.forEach(ulElement =>{
+    const lastChild = ulElement.lastElementChild;
+    lastChild.style.backgroundColor = "red";
+
+})
