@@ -47,7 +47,13 @@ const nextSibling = element.nextElementSibling;
 nextSibling.style.backgroundColor = "red";
 
  */
-const element = document.getElementById("vegetables");
+
+ /* const element = document.getElementById("vegetables");
 const previousSibling = element.previousElementSibling;
 
-previousSibling.style.backgroundColor = "red";
+previousSibling.style.backgroundColor = "red"; */
+
+const element = document.getElementById("vegetables");
+const parentElement = element.parentElement;
+
+parentElement.style.backgroundColor = "red";
