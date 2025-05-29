@@ -8,3 +8,11 @@
     background-color: lime;
     cursor: pointer;
 }
+#click-button{
+    height: 50px;
+    width: 200px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    
+}
