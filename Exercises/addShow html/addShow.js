@@ -4,12 +4,12 @@ const button = document.getElementById("button");
 
 button.addEventListener("click", event =>{
 
-    if(ironMan.style.display === "none"){
-        ironMan.style.display = "block";
+    if(ironMan.style.visibility === "hidden"){
+        ironMan.style.visibility = "visible";
         button.textContent = "HIDE";
     }
     else{
-        ironMan.style.display = "none";
+        ironMan.style.visibility = "hidden";
         button.textContent = "SHOW";
     }
 })
