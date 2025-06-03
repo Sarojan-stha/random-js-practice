@@ -1,0 +1,9 @@
+#myButton{
+    display: block;
+    width: 200px;
+    height: 70px;
+    background-color: lightblue;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
